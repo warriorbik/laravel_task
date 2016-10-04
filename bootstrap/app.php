@@ -41,9 +41,9 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
-$app->configureMonologUsing(function($monolog) {
+$app->configureMonologUsing(function ($monolog) {
     $logEntriesHandler = new Monolog\Handler\LogEntriesHandler('657891f5-de9f-4983-8ff9-6e386d760cb9');
- $monolog->pushHandler($logEntriesHandler);
+    $monolog->pushHandler($logEntriesHandler);
 });
 
 /*
