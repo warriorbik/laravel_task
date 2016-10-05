@@ -59,14 +59,16 @@ class ClientController extends BaseController
                     array_push($csv, $educaion_more);
                 }
             }
-            if($writer->writeLine($csv)) {
+            if ($writer->writeLine($csv)) {
                 \Log::info('Client Added to Csv file.');
-            }else {
+            } else {
                 \Log::error('Client Couldnot be added.');
-                return \Redirect::to('/')->with('message','Client couldnot be added.Please Retry.');
+
+                return \Redirect::to('/')->with('message', 'Client couldnot be added.Please Retry.');
             }
 
             $writer->close();
+
             return \Redirect::to('/listClients')->with('message', 'Client added successfully.');
         }
     }
