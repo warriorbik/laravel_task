@@ -23,9 +23,6 @@
     <!-- CSS -->
 
     
-    <!-- Safari doesn't trust the certificate from here:
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link href="{{ asset('assets/global/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href='https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
 
     
@@ -43,7 +40,7 @@
     <script src="{{ asset('assets/global/scripts/bootstrap.min.js') }}"></script>
     
     <script src="{{ asset('assets/global/scripts/jqueryui/jquery-ui.js') }}"></script>
-    <script src="{{ asset('assets/global/scripts/jquery.validate.js') }}"></script>    
+     
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
    
@@ -56,7 +53,7 @@
 
 <body>
 
-<div class="container-fluid bg-success" style="margin-bottom: 45px;">
+<div class="container-fluid bg-success" style="margin-bottom: 70px;">
     @include('layouts.includes.header')
 </div>
 @if (Session::has('message'))

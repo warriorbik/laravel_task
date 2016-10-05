@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
 <div class="lists">
-    <table class="display" id="example" width="100%" cellspacing="0">
+    <table class="display" id="clients" width="100%" cellspacing="0">
        <?php
        if(isset($reader))
        {
@@ -46,7 +46,7 @@
 </div>
 <script>
 $(function(){
-    $('#example').DataTable();
+    $('#clients').DataTable();
 })
 </script>
 @stop
