@@ -33,5 +33,4 @@ class ClientTest extends TestCase
             ->see('Client Added')
             ->seePageIs('/listClients');
     }
-    
 }
