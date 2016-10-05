@@ -30,6 +30,5 @@ class ClientTest extends TestCase
                                     'education_passedyear[0]' => '2005',
                                     'mode_of_contact'         => 'Email',
                                     ]);
-            
     }
 }
