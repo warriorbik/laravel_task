@@ -29,8 +29,7 @@ class ClientTest extends TestCase
                                     'education_name[0]'       => '+2',
                                     'education_passedyear[0]' => '2005',
                                     'mode_of_contact'         => 'Email',
-                                    ])
-            ->see('Client Added')
-            ->seePageIs('/listClients');
+                                    ]);
+            
     }
 }

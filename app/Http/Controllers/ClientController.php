@@ -21,19 +21,13 @@ class ClientController extends BaseController
         $educaion_more = '';
         $posts = \Input::all();
         if (isset($posts) && count($posts) > 0 && !is_null($posts)) {
-            //Writing to Csv file
-            $writer = \CsvWriter::create(app_path().'/../csv/clients.csv');
             foreach ($posts as $key => $post) {
                 if ($key != '_token' && $key != 'education_name' && $key != 'education_passedyear' && $key != 'submit') {
                     if ($key == 'year' || $key == 'month' || $key == 'day') {
                         $isdob++;
                         if ($key == 'year') {
                             $dob = $post;
-                        }
-                        if ($key == 'month') {
-                            $dob .= '-'.$post;
-                        }
-                        if ($key == 'day') {
+                        } else {
                             $dob .= '-'.$post;
                         }
 
@@ -41,10 +35,8 @@ class ClientController extends BaseController
                             array_push($csv, $dob);
                         }
                     } elseif ($key == 'mode_of_contact') {
-                        if ($post == 'Phone') {
-                            array_push($csv, $post.':'.$posts['phone']);
-                        } elseif ($post == 'Email') {
-                            array_push($csv, $post.':'.$posts['email']);
+                        if ($post != 'None') {
+                            array_push($csv, $post.':'.$posts[strtolower($post)]);
                         } else {
                             array_push($csv, $post);
                         }
@@ -59,6 +51,8 @@ class ClientController extends BaseController
                     array_push($csv, $educaion_more);
                 }
             }
+            //Writing to Csv file
+            $writer = \CsvWriter::create(app_path().'/../csv/clients.csv');
             if ($writer->writeLine($csv)) {
                 \Log::info('Client Added to Csv file.');
             } else {
