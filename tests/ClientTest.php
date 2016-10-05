@@ -1,9 +1,5 @@
 <?php
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-
 class ClientTest extends TestCase
 {
     /**
@@ -13,7 +9,7 @@ class ClientTest extends TestCase
      */
     public function test_listing_page()
     {
-         $this->visit('/')
+        $this->visit('/')
          ->click('List Clients')
          ->seePageIs('/listClients');
     }
