@@ -101,10 +101,6 @@ body.modal-open {
     bottom: 0;
 }
 
-.modal-open[style] {
-    padding-right: 0px !important;
-}
-
 .lesspadding {
     padding-left: 1px;
     padding-right: 1px;
@@ -117,27 +113,14 @@ body.modal-open {
 }
 
 .alert {
-    border-radius: 0px !important;
-    margin-bottom: 0 !important;
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
-}
-
-.jumbotron {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    margin-bottom: 0 !important;
 }
 
 .close {
     font-size: 2rem !important;
     font-weight: normal;
     opacity: .8 !important;
-}
-
-.container-fluid {
-    padding: 0 !important;
-
 }
 
 .container {
@@ -149,10 +132,6 @@ body.modal-open {
     margin-bottom: .5rem !important;
 }
 
-label {
-    margin-bottom: 0px !important;
-}
-
 .main-bg-image {
     background-image: url('../../../assets/images/restro-background.jpg') !important;
     background-size: cover;
@@ -161,24 +140,7 @@ label {
     padding: 8rem 0 9rem 0;
 }
 
-.signup-bg-image {
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.page-sidebar-menu, .sub-menu {
-    list-style-type: none;
-    padding-left: 0px;
-}
-
-.table thead th {
-    border-bottom: 0;
-}
-
 .table th, .table td {
-    border: 0 !important;
     padding: .5rem 1rem !important;
 }
 
@@ -192,23 +154,10 @@ tr {
 
 td {
     padding-bottom: .25rem;
-    border-top: 0 !important;
 }
 
 .banner-text-shadow {
     text-shadow: 1px 1px 9px rgba(0, 0, 0, 2);
-}
-
-.overlay_reservation {
-    background-color: rgba(0, 0, 0,.3);
-    z-index: 99999;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    position: fixed;
-    text-align: center;
-    display: none;
 }
 
 .loadmoreajaxloader {
@@ -221,38 +170,8 @@ td {
     color: red;
 }
 
-.overlay_loader {
-    background: rgba(0, 0, 0, .3) none repeat scroll 0 0;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99999;
-}
-
-.overlay {
-    left: calc(50% - 50px);
-    position: absolute;
-    top: calc(50% - 50px);
-}
-
-.subber {
-    padding: 20px;
-    border: 1px solid #dadada;
-}
-
 .clearfix {
     clear: both;
-}
-
-.required:after {
-    content: "*";
-    color: #e32;
-}
-
-.pagination {
-    margin: 0 !important;
 }
 
 .error {
