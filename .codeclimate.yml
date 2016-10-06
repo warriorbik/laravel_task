@@ -24,6 +24,8 @@ engines:
         - FixME
         - BUG
         - CUSTOM
+  phpmd:
+    enabled: true
 ratings:
   paths:
   - app/**
