@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1475689714">
+  <project timestamp="1475689714">
+    <package name="App\Console\Commands">
+      <file name="F:\wamp\www\task\app/Console/Commands/Inspire.php">
+        <class name="Inspire" namespace="App\Console\Commands">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        </class>
+        <line num="29" type="method" name="handle" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <metrics loc="33" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Console">
+      <file name="F:\wamp\www\task\app/Console/Kernel.php">
+        <class name="Kernel" namespace="App\Console">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="26" type="method" name="schedule" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <metrics loc="31" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="App\Events">
+      <file name="F:\wamp\www\task\app/Events/Event.php">
+        <class name="Event" namespace="App\Events">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="6" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Exceptions">
+      <file name="F:\wamp\www\task\app/Exceptions/Handler.php">
+        <class name="Handler" namespace="App\Exceptions">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+        </class>
+        <line num="35" type="method" name="report" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="48" type="method" name="render" crap="2" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <metrics loc="52" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers\Auth">
+      <file name="F:\wamp\www\task\app/Http/Controllers/Auth/AuthController.php">
+        <class name="AuthController" namespace="App\Http\Controllers\Auth">
+          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="15" coveredelements="0"/>
+        </class>
+        <line num="38" type="method" name="__construct" crap="2" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="50" type="method" name="validator" crap="2" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="66" type="method" name="create" crap="2" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <metrics loc="74" ncloc="40" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="15" coveredelements="0"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Controllers/Auth/PasswordController.php">
+        <class name="PasswordController" namespace="App\Http\Controllers\Auth">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="__construct" crap="2" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <metrics loc="32" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers">
+      <file name="F:\wamp\www\task\app/Http/Controllers/ClientController.php">
+        <class name="ClientController" namespace="App\Http\Controllers">
+          <metrics methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="37" elements="46" coveredelements="39"/>
+        </class>
+        <line num="10" type="method" name="index" crap="1" count="2"/>
+        <line num="12" type="stmt" count="2"/>
+        <line num="14" type="stmt" count="2"/>
+        <line num="17" type="method" name="saveCsv" crap="20.31" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="70" type="method" name="showClients" crap="1" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="75" type="stmt" count="1"/>
+        <metrics loc="77" ncloc="73" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="37" elements="46" coveredelements="39"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Controllers/Controller.php">
+        <class name="Controller" namespace="App\Http\Controllers">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="14" ncloc="14" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http">
+      <file name="F:\wamp\www\task\app/Http/Kernel.php">
+        <class name="Kernel" namespace="App\Http">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="53" ncloc="34" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Middleware">
+      <file name="F:\wamp\www\task\app/Http/Middleware/Authenticate.php">
+        <class name="Authenticate" namespace="App\Http\Middleware">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="19" type="method" name="handle" crap="20" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <metrics loc="31" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Middleware/EncryptCookies.php">
+        <class name="EncryptCookies" namespace="App\Http\Middleware">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Middleware/RedirectIfAuthenticated.php">
+        <class name="RedirectIfAuthenticated" namespace="App\Http\Middleware">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="19" type="method" name="handle" crap="6" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <metrics loc="27" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Middleware/VerifyCsrfToken.php">
+        <class name="VerifyCsrfToken" namespace="App\Http\Middleware">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Models">
+      <file name="F:\wamp\www\task\app/Http/Models/Country.php">
+        <class name="Country" namespace="App\Http\Models">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="12" ncloc="12" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Requests">
+      <file name="F:\wamp\www\task\app/Http/Requests/ClientFormRequest.php">
+        <class name="ClientFormRequest" namespace="App\Http\Requests">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+        </class>
+        <line num="7" type="method" name="authorize" crap="1" count="1"/>
+        <line num="9" type="stmt" count="1"/>
+        <line num="12" type="method" name="rules" crap="1" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <metrics loc="28" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Http/Requests/Request.php">
+        <class name="Request" namespace="App\Http\Requests">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Jobs">
+      <file name="F:\wamp\www\task\app/Jobs/Job.php">
+        <class name="Job" namespace="App\Jobs">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="21" ncloc="11" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="F:\wamp\www\task\app/Providers/AppServiceProvider.php">
+        <class name="AppServiceProvider" namespace="App\Providers">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+        </class>
+        <line num="14" type="method" name="boot" crap="1" count="2"/>
+        <line num="17" type="stmt" count="2"/>
+        <line num="24" type="method" name="register" crap="1" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <metrics loc="28" ncloc="14" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Providers/AuthServiceProvider.php">
+        <class name="AuthServiceProvider" namespace="App\Providers">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="26" type="method" name="boot" crap="1" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <metrics loc="32" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Providers/EventServiceProvider.php">
+        <class name="EventServiceProvider" namespace="App\Providers">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="28" type="method" name="boot" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="33" type="stmt" count="2"/>
+        <metrics loc="34" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="F:\wamp\www\task\app/Providers/RouteServiceProvider.php">
+        <class name="RouteServiceProvider" namespace="App\Providers">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+        </class>
+        <line num="26" type="method" name="boot" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="40" type="method" name="map" crap="1" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="56" type="method" name="mapWebRoutes" crap="1" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="60" type="method" name="anonymous function" crap="1" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="62" type="stmt" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <metrics loc="64" ncloc="30" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="13" coveredelements="13"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="F:\wamp\www\task\app/User.php">
+        <class name="User" namespace="App">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="26" ncloc="16" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="22" loc="721" ncloc="460" classes="22" methods="23" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="98" coveredstatements="65" elements="121" coveredelements="78"/>
+  </project>
+</coverage>

@@ -34,6 +34,7 @@ index e69de29..bd77b71 100644
 +exclude_paths:
 +- config/
 +- tests/
++- public/
 diff --git a/.csslintrc b/.csslintrc
 index e69de29..aacba95 100644
 --- a/.csslintrc
