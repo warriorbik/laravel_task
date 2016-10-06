@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Models\Country;
 use App\Http\Requests\ClientFormRequest;
-use Illuminate\Routing\Controller as BaseController;
 use CsvHelper;
+use Illuminate\Routing\Controller as BaseController;
 
 class ClientController extends BaseController
 {
     public function index()
     {
-        $model = new Country;
+        $model = new Country();
         $countries = $model->all();
 
         return view('client.index', ['countries' => $countries]);
@@ -19,8 +19,8 @@ class ClientController extends BaseController
 
     public function saveCsv(ClientFormRequest $req)
     {
-        $helper = new CsvHelper;
-        
+        $helper = new CsvHelper();
+
         $csv = [];
         $isdob = 0;
         $educationMore = '';
@@ -74,7 +74,7 @@ class ClientController extends BaseController
 
     public function showClients()
     {
-        $helper = new CsvHelper;
+        $helper = new CsvHelper();
         //Reading From the saved CSV file.
         $reader = $helper->open(app_path().'/../csv/clients.csv');
 
