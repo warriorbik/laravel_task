@@ -25,9 +25,6 @@ white-space: nowrap
     padding-right: .75rem;
 }
 
-* {
-border: 0 !important;
-}
 
 textarea, select, input[type=text], input[type=number], input[type=email], input[type=password], input[type=text], input[type=text] {
     border: 1px solid #e8e8e8 !important;
@@ -72,11 +69,6 @@ hr {
     border-right-width: 1px;
 }
 
-.triple-input .form-control {
-    width: 33.3%;
-    border-right-width: 0px;
-}
-
 .triple-input .form-control:focus {
     border-right-width: 1px;
 }
@@ -86,10 +78,9 @@ hr {
     z-index: 1052 !important;
     position: fixed;
     display: inline-block;
-    float: left;
 }
 
-a.anchor {
+.anchor {
     top: 50px;
 }
 

@@ -50,19 +50,19 @@ $(function(){
                     
 					error.addClass( "help-block" );
 
-					if ( element.attr( "name" ) == "date" || element.attr( "name" ) == "year" || element.attr( "name" ) == "month" ) {
+					if ( element.attr( "name" ) === "date" || element.attr( "name" ) === "year" || element.attr( "name" ) === "month" ) {
 						error.insertAfter( ".day" );
 					}
-                    else if(element.attr( "name" ) == "education_passedyear[]" || element.attr( "name" ) == "education_name[]")
+                    else if(element.attr( "name" ) === "education_passedyear[]" || element.attr( "name" ) === "education_name[]")
                     {
                         error.insertAfter('.addeducation')
                     }
-                    else if(element.prop('name')=== 'gender')
+                    else if(element.prop('name') === 'gender')
                     {
                         
                         error.insertAfter( ('.gender'));
                     }
-                    else if(element.prop('name')=== 'mode_of_contact')
+                    else if(element.prop('name') === 'mode_of_contact')
                     {
                         
                         error.insertAfter( ('.mode_of_contact'));
@@ -76,7 +76,7 @@ $(function(){
 				},
 				unhighlight: function (element, errorClass, validClass) {
 					$( element ).parents( ".form-group" ).addClass( "has-success" ).removeClass( "has-error" );
-				},
+				}
                 
 			} );
 } );
