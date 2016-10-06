@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "16ee4d09a2a526ec42855a2a425b6be9",
-    "content-hash": "a947d134122257c23f9dd293f7bd9f9b",
+    "hash": "7f427e89aa238209ef1f8399db79ea94",
+    "content-hash": "a2e4d09e660cd5e81ff45c1edb08b761",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1893,49 +1893,6 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
-        },
-        {
-            "name": "wilgucki/csv",
-            "version": "v0.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wilgucki/csv.git",
-                "reference": "340a599c23c7a19eb415126957cbdc3b1cf96473"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wilgucki/csv/zipball/340a599c23c7a19eb415126957cbdc3b1cf96473",
-                "reference": "340a599c23c7a19eb415126957cbdc3b1cf96473",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "^1.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Wilgucki\\Csv\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maciej Wilgucki",
-                    "email": "mwilgucki@gmail.com"
-                }
-            ],
-            "description": "Laravel 5 package for writing and reading CSV files",
-            "keywords": [
-                "csv",
-                "laravel"
-            ],
-            "time": "2016-05-23 19:02:31"
         }
     ],
     "packages-dev": [

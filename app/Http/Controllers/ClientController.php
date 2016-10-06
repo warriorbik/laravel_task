@@ -2,23 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Models\Country;
 use App\Http\Requests\ClientFormRequest;
 use Illuminate\Routing\Controller as BaseController;
+use CsvHelper;
 
 class ClientController extends BaseController
 {
     public function index()
     {
-        $countries = \App\Http\Models\Country::all();
+        $model = new Country;
+        $countries = $model->all();
 
         return view('client.index', ['countries' => $countries]);
     }
 
-    public function saveCsv(ClientFormRequest $request)
+    public function saveCsv(ClientFormRequest $req)
     {
+        $helper = new CsvHelper;
+        
         $csv = [];
         $isdob = 0;
-        $educaion_more = '';
+        $educationMore = '';
         $posts = \Input::all();
         if (isset($posts) && count($posts) > 0 && !is_null($posts)) {
             foreach ($posts as $key => $post) {
@@ -45,32 +50,33 @@ class ClientController extends BaseController
                     }
                 } elseif ($key == 'education_name') {
                     foreach ($posts['education_name'] as $k => $name) {
-                        $educaion_more .= 'Level:'.$name.', Passed Year:'.$posts['education_passedyear'][$k].'<br/>';
+                        $educationMore .= 'Level:'.$name.', Passed Year:'.$posts['education_passedyear'][$k].'<br/>';
                     }
 
-                    array_push($csv, $educaion_more);
+                    array_push($csv, $educationMore);
                 }
             }
             //Writing to Csv file
-            $writer = \CsvWriter::create(app_path().'/../csv/clients.csv');
+            $writer = $helper->append(app_path().'/../csv/clients.csv');
             if ($writer->writeLine($csv)) {
                 \Log::info('Client Added to Csv file.');
             } else {
                 \Log::error('Client Couldnot be added.');
 
-                return \Redirect::to('/')->with('message', 'Client couldnot be added.Please Retry.');
+                //return \Redirect::to('/')->with('message', 'Client couldnot be added.Please Retry.');
             }
 
             $writer->close();
 
-            return \Redirect::to('/listClients')->with('message', 'Client added successfully.');
+            //return \Redirect::to('/listClients')->with('message', 'Client added successfully.');
         }
     }
 
     public function showClients()
     {
+        $helper = new CsvHelper;
         //Reading From the saved CSV file.
-        $reader = \CsvReader::open(app_path().'/../csv/clients.csv');
+        $reader = $helper->open(app_path().'/../csv/clients.csv');
 
         return view('client.showCsv', ['reader' => $reader]);
     }

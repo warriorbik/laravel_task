@@ -155,7 +155,6 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Wilgucki\Csv\CsvServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
 
@@ -173,8 +172,6 @@ return [
     */
 
     'aliases' => [
-        'CsvReader' => Wilgucki\Csv\Facades\Reader::class,
-        'CsvWriter' => Wilgucki\Csv\Facades\Writer::class,
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Auth'      => Illuminate\Support\Facades\Auth::class,
