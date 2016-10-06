@@ -1,4 +1,5 @@
 <?php
+
 class CsvHelper
 {
     protected $handle = null;
@@ -11,10 +12,10 @@ class CsvHelper
     /**
      * Open CSV file for writing.
      *
-     * @param string $file File name for writing CSV data. If not provided memory will be used as CSV file.
+     * @param string $file      File name for writing CSV data. If not provided memory will be used as CSV file.
      * @param null   $delimiter @link http://php.net/manual/en/function.fputcsv.php
      * @param null   $enclosure @link http://php.net/manual/en/function.fputcsv.php
-     * @param null   $escape @link http://php.net/manual/en/function.fputcsv.php
+     * @param null   $escape    @link http://php.net/manual/en/function.fputcsv.php
      *
      * @return $this
      */
@@ -39,11 +40,12 @@ class CsvHelper
         }
 
         $this->handle = fopen($file, 'a+');
+
         return $this;
     }
 
     /**
-     * Close file pointer
+     * Close file pointer.
      */
     public function close()
     {
@@ -61,7 +63,7 @@ class CsvHelper
     }
 
     /**
-     * Write all line to CSV file at once
+     * Write all line to CSV file at once.
      *
      * @param array $data
      */
@@ -82,11 +84,12 @@ class CsvHelper
         rewind($this->handle);
         $out = stream_get_contents($this->handle);
         fseek($this->handle, 0, SEEK_END);
+
         return $out;
     }
 
     /**
-     * Wrapper for fputcsv function
+     * Wrapper for fputcsv function.
      *
      * @param array $row
      */
@@ -104,6 +107,7 @@ class CsvHelper
 
         fputcsv($this->handle, $row, $this->delimiter, $this->enclosure, $this->escape);
     }
+
     public function open($file, $delimiter = null, $enclosure = null, $escape = null)
     {
         if ($delimiter !== null) {
@@ -125,8 +129,10 @@ class CsvHelper
         }
 
         $this->handle = fopen($file, 'r+');
+
         return $this;
     }
+
     /**
      * Get CSV header. Usually it's a first line in file.
      *
@@ -138,11 +144,12 @@ class CsvHelper
         if (ftell($this->handle) == 0) {
             $this->header = $this->read();
         }
+
         return $this->header;
     }
 
     /**
-     * Read current line from CSV file
+     * Read current line from CSV file.
      *
      * @return array
      */
@@ -152,11 +159,12 @@ class CsvHelper
         if ($this->withHeader && is_array($out)) {
             $out = array_combine($this->header, $out);
         }
+
         return $out;
     }
 
     /**
-     * Read all lines from CSV file
+     * Read all lines from CSV file.
      *
      * @return array
      */
@@ -166,11 +174,12 @@ class CsvHelper
         while (($row = $this->readLine()) !== false) {
             $out[] = $row;
         }
+
         return $out;
     }
 
     /**
-     * Wrapper for fgetcsv function
+     * Wrapper for fgetcsv function.
      *
      * @return array
      */
