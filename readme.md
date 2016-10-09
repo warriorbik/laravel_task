@@ -31,7 +31,7 @@ The test file simply adds a client with defined values on the csv.
 2. Server side validation: For this it uses FormRequest. The rules are set on the file ClientFormReuest
 
 ## Note
-
-Please import the task.sql from the root directory.
+1. Please Run composer update on the terminal form your root diretorty 
+2. Please import the task.sql from the root directory.
 
 
